@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="@localhost">
+  <database-model serializer="dbm" dbms="MYSQL" family-id="MYSQL" format-version="4.48">
+    <root id="1">
+      <DefaultCasing>lower/lower</DefaultCasing>
+      <ServerVersion>8.0.28</ServerVersion>
+    </root>
+    <schema id="2" parent="1" name="ascent"/>
+    <schema id="3" parent="1" name="blog"/>
+    <schema id="4" parent="1" name="bookshop"/>
+    <schema id="5" parent="1" name="chapter04"/>
+    <schema id="6" parent="1" name="chapter06"/>
+    <schema id="7" parent="1" name="chat"/>
+    <schema id="8" parent="1" name="chitchat"/>
+    <schema id="9" parent="1" name="cloudshare"/>
+    <schema id="10" parent="1" name="community"/>
+    <schema id="11" parent="1" name="communitymaven"/>
+    <schema id="12" parent="1" name="db_database24"/>
+    <schema id="13" parent="1" name="fruitdb"/>
+    <schema id="14" parent="1" name="go_web"/>
+    <schema id="15" parent="1" name="graduation_design"/>
+    <schema id="16" parent="1" name="guigu-oa"/>
+    <schema id="17" parent="1" name="information_schema"/>
+    <schema id="18" parent="1" name="jdbc"/>
+    <schema id="19" parent="1" name="manager"/>
+    <schema id="20" parent="1" name="mybatis"/>
+    <schema id="21" parent="1" name="mybatis_plus"/>
+    <schema id="22" parent="1" name="mysql"/>
+    <schema id="23" parent="1" name="performance_schema"/>
+    <schema id="24" parent="1" name="qing"/>
+    <schema id="25" parent="1" name="shop"/>
+    <schema id="26" parent="1" name="shoppingweb"/>
+    <schema id="27" parent="1" name="spj"/>
+    <schema id="28" parent="1" name="spring"/>
+    <schema id="29" parent="1" name="sqlexp-sztuoj"/>
+    <schema id="30" parent="1" name="store_admin"/>
+    <schema id="31" parent="1" name="store_carousel"/>
+    <schema id="32" parent="1" name="store_cart"/>
+    <schema id="33" parent="1" name="store_category"/>
+    <schema id="34" parent="1" name="store_collect"/>
+    <schema id="35" parent="1" name="store_order"/>
+    <schema id="36" parent="1" name="store_product"/>
+    <schema id="37" parent="1" name="store_user"/>
+    <schema id="38" parent="1" name="sys"/>
+    <schema id="39" parent="1" name="tank"/>
+    <schema id="40" parent="1" name="vmark"/>
+  </database-model>
+</dataSource>

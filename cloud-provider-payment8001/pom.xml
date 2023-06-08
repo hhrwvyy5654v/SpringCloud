@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://maven.apache.org/POM/4.0.0"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+
+    <parent>
+        <groupId>org.example</groupId>
+        <artifactId>SpringCloud</artifactId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
+
+
+    <modelVersion>4.0.0</modelVersion>
+    <artifactId>cloud-provider-payment8001</artifactId>
+
+
+    <dependencies>
+        <!--Zipkin是一个分布式跟踪，它可以帮助开发人员跟踪分布式系统中的请求流程和性能瓶颈，提供了可视化的跟踪数据和析工具-->
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>    <!--自动引入Zipkin客户端库和Spring Cloud Sleuth库-->
+            <artifactId>spring-cloud-starter-zipkin</artifactId>
+        </dependency>
+
+        <!--Netflix Eureka一个服务发现框架，它可以帮助开发人员在分布式系统中进行服务注册和发现，提供了可视化的服务注册和发现界面-->
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
+        </dependency>
+
+        <dependency><!-- 引入自己定义的api通用包，可以使用Payment支付Entity -->
+            <groupId>org.example.springcloud</groupId>
+            <artifactId>cloud-api-commons</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+
+        <!--Spring Boot Starter Web是一个Spring Boot的Starter，它可以帮助开发人员快速集成Web功能到Spring Boot应用程序中，提供了一些自动配置和默认值，使得开发人员可以更加方便地进行Web开发-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+
+        <!--MyBatis是一个优秀的持久层框架，可以将Java对象映射到数据库表中，提供了灵活的SQL映射和动态SQL功能，使得开发人员可以更加方便地进行数据库操作-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-actuator</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.mybatis.spring.boot</groupId>
+            <artifactId>mybatis-spring-boot-starter</artifactId>
+        </dependency>
+
+        <!--Druid是一个高性能的JDBC连接池，它支持监控、防御SQL注入等功能，是目前比较流行的连接池之一-->
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>druid-spring-boot-starter</artifactId>
+            <version>1.1.10</version>
+        </dependency>
+
+        <!--mysql-connector-java-->
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+        </dependency>
+
+        <!--jdbc-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-jdbc</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-devtools</artifactId>
+            <scope>runtime</scope>  <!--运行时使用，不会在编译时使用-->
+            <optional>true</optional>   <!--依赖是可选的，若项目中没有使用到Spring Boot的开发工具，则该依赖就不会被引入-->
+        </dependency>
+
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <optional>true</optional>   <!--依赖是可选的-->
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
+            <scope>test</scope> <!--依赖的作用域是test，只在测试代码中使用，不会在生产代码中使用-->
+        </dependency>
+    </dependencies>
+
+</project>
